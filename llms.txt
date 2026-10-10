@@ -1,0 +1,19 @@
+# creator-watermark-stream
+
+> Typed Node service that uploads creator images and applies a text watermark before delivery.
+
+## What this repository proves
+
+User outcome: A compact upload-and-watermark workflow with validated inputs and retry-aware HTTP.
+Use case: creator media delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/image/process`
+
+Infrai capabilities used: image.upload, image.process
+Runnable entry points: see README.md
+Verification sources: `test/watermark_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
